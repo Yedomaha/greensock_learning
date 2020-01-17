@@ -1,0 +1,26 @@
+body{
+  background-color: #5b79a8;
+}
+
+.welcome-section{
+  &__inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+  &__title, .ws-title{
+    margin-bottom: 50px;
+    color: #9BB7E5;
+    font-family: monospace;
+    font-size: 30px;
+    text-align: center;
+  }
+  &__img{
+    display: block;
+    max-width: 500px;
+    width: 80%;
+    margin: 0 auto;
+  }
+}

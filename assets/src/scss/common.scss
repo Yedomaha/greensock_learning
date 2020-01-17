@@ -1,0 +1,63 @@
+
+$font1: 'Roboto', sans-serif;
+$font2: 'Montserrat', sans-serif;
+
+body,div,section,ul,ol,li,p,span,a,h1,h2,h3,h4,h5,h6,input,textarea,header,footer{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+}
+
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body{
+  background-color: #fff;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
+  overflow: hidden;
+}
+
+footer{
+  flex: 0 0 auto;
+}
+
+.container{
+  max-width: 1300px;
+  width: 95%;
+  margin: 0 auto;
+  height: 100%;
+  @include media(1200px){
+    max-width: 960px;
+  }
+  @include media(992px){
+    max-width: 720px;
+  }
+  @include media(768px){
+    max-width: 540px;
+  }
+  @include media(576px){
+    max-width: none;
+  }
+}
